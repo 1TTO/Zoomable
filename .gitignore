@@ -1,0 +1,7 @@
+# Project exclude paths
+# Extendable class for "zooming"/scaling, ideal for images or maps
+/out
+/.idea
+/src
+/Zoomable.iml
+/.gitignore
