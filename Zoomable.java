@@ -115,8 +115,9 @@ abstract public class Zoomable extends Pane {
             newPosition.setY(position.getY() + deltaYscaled);
 
             // the Pane itself needs to be scaled as well
-            this.setScaleX(getScale() * localScaleFactor);
-            this.setScaleY(getScale() * localScaleFactor);
+            double newScale = getScale() * localScaleFactor;
+            this.setScaleX(newScale);
+            this.setScaleY(newScale);
 
             // check if the new coordinates are out of bounds and set them as new position
             position = getInBoundsTranslate(newPosition, this.getScaleX());
